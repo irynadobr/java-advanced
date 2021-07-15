@@ -11,12 +11,14 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Data
 @Entity
-//@Table (name = "Movie_table")
-public class Movie {
+
+public class Computer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(nullable = false, length = 100)
-    private String title;
-    private int duration;
+    @Column(nullable = false, length = 60)
+    private String model;
+    private int ram;
+    private int cpu;
+    private int monitorDiagonal;
 }
